@@ -22,7 +22,7 @@ const MenuNavbar = () => {
               <p className="navbar__link">HJEM</p>
             </Domlink>
             <Link
-              to="main"
+              to="hero"
               spy={true}
               smooth={true}
               offset={-100}

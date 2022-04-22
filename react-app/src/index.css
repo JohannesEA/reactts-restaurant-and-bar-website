@@ -69,6 +69,13 @@ a {
     background-color: var(--color--secondary-hover);
 }
 
+.fab__btn {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
 form {
     box-shadow: var(--box--shadow);
     padding: 1em;

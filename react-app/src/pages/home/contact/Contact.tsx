@@ -1,7 +1,12 @@
-import React from "react";
 import { Wrapper } from "./Contact.styles";
+import { MouseEvent } from "react";
 
 const Contact = () => {
+  const handleSendMail = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    alert("Metode ikke implementert");
+  };
+
   return (
     <Wrapper id="contact">
       <h1 className="contact_title">Book et bord</h1>
@@ -15,7 +20,12 @@ const Contact = () => {
         <input className="contact__input" placeholder="Mobilnummer.." />
         <input className="contact__input" placeholder="Tittel.." />
         <textarea className="contact__input" placeholder="Melding.." />
-        <button className="button button--primary contact__button">Book</button>
+        <button
+          onClick={(e) => handleSendMail(e)}
+          className="button button--primary contact__button"
+        >
+          Book
+        </button>
       </form>
     </Wrapper>
   );

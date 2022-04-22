@@ -1,3 +1,5 @@
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 import Footer from "../../components/footer/Footer";
 import MenuItemBox from "../../components/menu-item-box/MenuItemBox";
 import MenuNavbar from "../../components/navbar/MenuNavbar";
@@ -178,9 +180,19 @@ const MenuPage = () => {
   return (
     <>
       <MenuNavbar />
+      <Link
+        className="fab__btn"
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={300}
+      >
+        <BsFillArrowUpSquareFill size={35} color="var(--color--secondary)" />
+      </Link>
       <Wrapper>
         <h3 className="menupage__title">Hovedretter</h3>
-        <div id="main" className="menu__main-container">
+        <div id="hero" className="menu__main-container">
           {MENU__MAIN__COURSES.map((item) => (
             <MenuItemBox item={item} />
           ))}

@@ -1,6 +1,12 @@
 import { Wrapper } from "./Booking.styles";
+import { MouseEvent } from "react";
 
 const Booking = () => {
+  const handleSendMail = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    alert("Metode ikke implementert");
+  };
+
   return (
     <Wrapper id="booking">
       <h1 className="booking__title">Bestill Bord</h1>
@@ -15,7 +21,12 @@ const Booking = () => {
         <input className="booking__input" placeholder="Navn.." />
         <input className="booking__input" placeholder="Epost.." />
         <textarea className="booking__input" placeholder="Melding.." />
-        <button className="button button--primary booking__button">Send</button>
+        <button
+          onClick={(e) => handleSendMail(e)}
+          className="button button--primary booking__button"
+        >
+          Send
+        </button>
       </form>
     </Wrapper>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { Wrapper } from "./Hero.styles";
 
 const Hero = () => {
@@ -16,9 +17,17 @@ const Hero = () => {
           Unik, sofistikert og moderne - men samtidig uformell -
           restaurantopplevelse.
         </p>
-        <button className="button button--primary hero__button">
-          Bestill bord
-        </button>
+        <Link
+          to="booking"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={300}
+        >
+          <button className="button button--primary hero__button">
+            Bestill bord
+          </button>
+        </Link>
       </div>
     </Wrapper>
   );

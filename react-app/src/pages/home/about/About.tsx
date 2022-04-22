@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { Wrapper } from "./About.styles";
 
 const About = () => {
@@ -18,9 +19,17 @@ const About = () => {
           menneskene levde som jegere og fiskere. Velkommen til rene, ekte og
           nyskapende matopplevelser.
         </p>
-        <button className="button button--primary about__button">
-          Kontakt Oss
-        </button>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={300}
+        >
+          <button className="button button--primary about__button">
+            Kontakt Oss
+          </button>
+        </Link>
       </div>
     </Wrapper>
   );
