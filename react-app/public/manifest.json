@@ -1,0 +1,13 @@
+{
+    "short_name": "React App",
+    "name": "Den perfekte baren for deg og dine.",
+    "icons": [{
+        "src": "/assets/logos/logo1.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    }],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 4vw, 2.6rem);
+    font-family: "Libre Baskerville", serif;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    font-family: "Libre Baskerville", serif;
+}
+
+h3 {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    font-family: "Libre Baskerville", serif;
+}
+
+h4 {
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-family: "Libre Baskerville", serif;
+}
+
+p {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.button {
+    overflow: hidden;
+    outline: none;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+    cursor: pointer;
+    max-width: 20em;
+    font-family: "Libre Baskerville", serif;
+}
+
+.button--primary {
+    background-color: var(--color--primary);
+    color: var(--color--light);
+}
+
+.button--primary:hover {
+    background-color: var(--color--primary-hover);
+}
+
+.button--secondary {
+    background-color: var(--color--secondary);
+    color: var(--color--light);
+}
+
+.button--secondary:hover {
+    background-color: var(--color--secondary-hover);
+}
+
+form {
+    box-shadow: var(--box--shadow);
+    padding: 1em;
+}
+
+input,
+textarea {
+    font-family: "Libre Baskerville", serif;
+    border: none;
+    outline: none;
+    width: 90%;
+    border-bottom: 1px solid var(--color--primary);
+    margin: 1em auto;
+    padding: 1em;
+}
