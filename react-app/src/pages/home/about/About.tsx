@@ -7,7 +7,7 @@ const About = () => {
       <img
         className="about__img"
         src="/assets/images/img__bar--2.jpg"
-        alt="Introduction image for welcome section"
+        alt="Introduction screen for about section"
       />
       <div className="about__text-and-button-container">
         <h1 className="about__title">Om Oss</h1>

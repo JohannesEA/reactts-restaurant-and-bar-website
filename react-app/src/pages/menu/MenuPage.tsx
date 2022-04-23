@@ -1,6 +1,5 @@
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import Footer from "../../components/footer/Footer";
 import MenuItemBox from "../../components/menu-item-box/MenuItemBox";
 import MenuNavbar from "../../components/navbar/MenuNavbar";
 import { ScrollToTop } from "../../universal/Functions";

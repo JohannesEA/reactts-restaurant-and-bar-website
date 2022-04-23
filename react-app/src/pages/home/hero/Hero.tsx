@@ -7,7 +7,7 @@ const Hero = () => {
       <img
         className="hero__img"
         src="/assets/images/img__salad.jpg"
-        alt="Introduction image for welcome section"
+        alt="Salads"
       />
 
       <div className="hero__text-and-button-container">
