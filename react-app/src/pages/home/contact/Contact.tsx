@@ -1,11 +1,13 @@
 import { Wrapper } from "./Contact.styles";
-import { MouseEvent } from "react";
+import { MouseEvent, useState } from "react";
+import Calendar from "react-calendar";
 
 const Contact = () => {
   const handleSendMail = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     alert("Metode ikke implementert");
   };
+  const [value, onChange] = useState(new Date());
 
   return (
     <Wrapper id="contact">
@@ -14,7 +16,10 @@ const Contact = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
         consequuntur.
       </p>
+
       <form className="contact__form">
+        <Calendar onChange={onChange} value={value} />
+
         <input className="contact__input" placeholder="Navn.." />
         <input className="contact__input" placeholder="Epost.." />
         <input className="contact__input" placeholder="Mobilnummer.." />

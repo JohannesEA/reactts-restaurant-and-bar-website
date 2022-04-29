@@ -34,4 +34,13 @@ export const Wrapper = styled.div`
   .booking__label {
     width: 90%;
   }
+
+  .booking__calendar {
+    max-width: 20em;
+    margin: 1em auto;
+  }
+
+  .booking__date {
+    margin: 0 auto;
+  }
 `;
